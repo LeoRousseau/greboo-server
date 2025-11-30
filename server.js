@@ -5,7 +5,40 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-let scores = [];
+let scores = [
+  {
+    name: "Alice",
+    score: 100,
+    date: Date.now(),
+    name: "Alice1",
+    score: 100,
+    date: Date.now(),
+    name: "Alice2",
+    score: 100,
+    date: Date.now(),
+    name: "Alice3",
+    score: 100,
+    date: Date.now(),
+    name: "Alice4",
+    score: 100,
+    date: Date.now(),
+    name: "Alice5",
+    score: 100,
+    date: Date.now(),
+    name: "Alice6",
+    score: 100,
+    date: Date.now(),
+    name: "Alice7",
+    score: 100,
+    date: Date.now(),
+    name: "Alice9",
+    score: 100,
+    date: Date.now(),
+    name: "Alice",
+    score: 100,
+    date: Date.now(),
+  },
+];
 
 app.post("/scores", (req, res) => {
   const { name, score } = req.body;
